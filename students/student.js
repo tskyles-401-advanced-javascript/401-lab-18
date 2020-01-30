@@ -8,7 +8,7 @@ schoolChannel.emit('join', 'student');
 // function that emits a submission every second
 function sendSubmission(){
   let lab = Math.floor(Math.random() * 100);
-  schoolChannel.emit('submission', `assignment:'Lab ${lab}`);
+  schoolChannel.emit('submission', `Lab ${lab}`);
 }
 
 setInterval(() => sendSubmission(), 1000);
