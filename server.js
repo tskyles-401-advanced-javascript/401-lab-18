@@ -27,4 +27,4 @@ school.on('connect', socket => {
     school.to('student').emit('graded', payload);
   });
 
-})
+});

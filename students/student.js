@@ -16,6 +16,6 @@ function sendSubmission(){
 // log graded assignments to console
 schoolChannel.on('graded', (payload) => {
   console.log(payload);
-})
+});
 
 setInterval(() => sendSubmission(), 1000);

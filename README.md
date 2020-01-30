@@ -8,9 +8,10 @@
 * [submission PR]()
 * [travis]()
 
-### Setup
+### Docs
+* run live-server on /docs/index.html
 
-#### How to initialize/run your server app (where applicable)
+#### How to initialize/run your server app
 - run commands in three seperate terminals
 * node server.js
 * node instructor/instructor.js
