@@ -10,5 +10,9 @@ function sendSubmission(){
   let lab = Math.floor(Math.random() * 100);
   schoolChannel.emit('submission', `Lab ${lab}`);
 }
+// log graded assignments to console
+schoolChannel.on('graded', (payload) => {
+  console.log(payload);
+})
 
 setInterval(() => sendSubmission(), 1000);
