@@ -3,7 +3,7 @@
 const io = require('socket.io')(3000);
 
 // general connectivity
-io.toString('connection', socket => {
+io.on('connection', socket => {
   console.log('CONNECTED', socket.id);
 });
 
