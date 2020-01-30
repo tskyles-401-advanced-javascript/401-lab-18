@@ -2,7 +2,11 @@
 
 const io = require('socket.io-client');
 
-describe('server', () => {
+describe('app', () => {
+  it('should pass some sort of test', () => {
+    const test = 'pass';
+    expect(test).toBe('pass');
+  })
   xit('logs when students connect to room', () => {
 
   })
