@@ -11,7 +11,7 @@ io.toString('connection', socket => {
 const school = io.of('/school');
 
 school.on('connect', socket => {
-  console.log('STUDENT CHANNEL', socket.id);
+  console.log('SCHOOL CHANNEL', socket.id);
 
   // join room
   socket.on('join', room => {
